@@ -1,0 +1,92 @@
+body{
+overflow-y: scroll;
+box-sizing: border-box;
+}
+.footer{
+	text-align: center;
+	font-family: monospace;
+	height:30vh;
+		font-size:15px;
+	background-color: black;
+	color:white;
+	padding-top: 30px;
+	
+}
+
+lottie-player{
+	width: 300px;
+	 height: 300px; 
+	 align-content: center;
+	justify-content: center;
+   margin-top:200px ;
+   top:50%;
+	left:70%;
+	transform: translate(-50%,-50%);
+	
+	position: relative;
+	float: left;
+}
+  #pid{
+      font-family:  'ColorTube';
+       font-size: 25px;
+       display: flex;
+     flex-direction: column;
+        align-items: center;
+     justify-content: center;
+       padding: 100px 0;
+       position: relative;
+  }
+   #pid:hover{    animation-name: bounce;
+	animation-duration: 3s;	
+	animation-timing-function: ease;		
+	transform-origin: 50% 100%;
+
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0%) scaleY(0.6);
+	}
+	60%{
+		transform: translateY(-20%) scaleY(1.1);
+	}
+	70%{
+		transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+	}
+	80%{  
+		transform: translateY(0%) scaleY(1.05) scaleX(1);
+	}	
+	90%{
+		transform: translateY(0%) scaleY(0.95) scaleX(1);
+	}				
+	100%{
+		transform: translateY(0%) scaleY(1) scaleX(1);
+	}	
+}
+
+       .dark{
+		    background-color:black ;
+		    margin: 0;
+			
+			transition:background-color 1.5s ;
+		  
+				   }
+        .texts{
+			color:white !IMPORTANT;
+
+		}				   
+     	  .fts{
+			border-top: white 1px solid;
+			transition: border-top 2.5s;
+		   }
+
+
+
+@font-face {
+    font-family: 'ColorTube';
+    src: url(' fonts/ColorTube-Regular.ttf'); /* IE9 Compat Modes */
+    src: url('fonts/ColorTube-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/ColorTube-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+         url('fonts/ColorTube-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/webfont.ttf')  format('truetype'), /* Safari, Android, iOS
+  }
