@@ -4,19 +4,11 @@ import youtube from '../apis/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail' ;
 import DarkMode from './DarkMode';
-const dark= {
-  color: "white",
-  backgroundColor: "black",
-  padding: "10px",
-  height: "100vh"
 
-};
 
 class App extends React.Component { 
     state = { videos :[] , selectedVideo: null } ;  
-     dark=(e)=>{
-       console.log("this isjkl");
-     }
+    
     onTermSubmit=async(term)=>{
         const response = await youtube.get('/search',{
           params:{
@@ -34,7 +26,7 @@ class App extends React.Component {
         return (
            
         <div className="ui container"> 
-        <DarkMode onClick={this.dark}>dark mode</DarkMode>
+        <DarkMode>dark mode</DarkMode>
        
         <SearchBar onFormSubmit={this.onTermSubmit}/>
         <div className ="ui grid">
